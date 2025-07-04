@@ -31,11 +31,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+input,
 button {
-  font-family: inherit;
-}
-
-input {
   font-family: inherit;
 }
 /* #endregion Reset style */
@@ -234,10 +231,12 @@ input {
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: nowrap;
   gap: 24px;
 }
 
-.advantages-ltem {
+.advantages-item {
   margin: 0;
   flex-basis: calc((100% - 72px) / 4);
 }
@@ -293,6 +292,8 @@ input {
 }
 
 .team-list {
+  display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 .team-item {
@@ -419,7 +420,7 @@ input {
 
 .portfolio-item:hover .overlay,
 .portfolio-item:focus .overlay {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 /* overlay */
 
@@ -510,6 +511,7 @@ input {
 }
 
 .footer-item-list {
+  display: flex;
   gap: 16px;
 }
 
@@ -750,6 +752,7 @@ input:placeholder-shown:focus {
 .checkbox-label a {
   color: #4d5ae5;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .custom-checkbox {
@@ -760,22 +763,23 @@ input:placeholder-shown:focus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease, border 0.3s ease;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .checkbox-icon {
   fill: transparent;
-  transition: fill 0.3s ease;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-label input:checked + .custom-checkbox {
-  background-color: var(--accent-bg, #404bbf);
+  background-color: #404bbf;
   border: none;
 }
 
 .checkbox-label input:checked + .custom-checkbox .checkbox-icon {
-  fill: var(--icon-color, #f4f4fd);
+  fill: #f4f4fd;
 }
 
 .modal-button {
@@ -810,9 +814,3 @@ input:placeholder-shown:focus {
   background-color: #404bbf;
 }
 /* #endregion Modal */
-
-.input-wrapper input:focus,
-.modal-textaria:focus {
-  border-color: #4d5ae5;
-  outline: 1px solid #4d5ae5;
-}
