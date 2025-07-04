@@ -837,16 +837,8 @@ button {
 input:checked + .checkbox-label > .custom-checkbox {
   background-color: #404bbf;
   border: none;
-}
-
-input:checked + .checkbox-label > .custom-checkbox .checkbox-icon {
   fill: #f4f4fd;
 }
-
-/* .checkbox-input:focus + .checkbox-label > .custom-checkbox {
-  outline: 2px solid #4d5ae5;
-  outline-offset: 2px;
-} */
 
 .modal-button {
   font-weight: 500;
