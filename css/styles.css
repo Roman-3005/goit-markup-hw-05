@@ -544,8 +544,6 @@ button {
 
   background-color: transparent;
 
-  margin-right: 24px;
-
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -570,7 +568,6 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
 
   border-radius: 4px;
   padding: 8px 24px;
