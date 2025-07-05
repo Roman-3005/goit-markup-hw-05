@@ -803,10 +803,6 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
 }
 
 .custom-checkbox {
@@ -823,6 +819,7 @@ button {
   flex-shrink: 0;
   cursor: pointer;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .checkbox-link {
@@ -831,6 +828,7 @@ button {
   cursor: pointer;
   line-height: 1.33;
   text-decoration-skip-ink: none;
+  margin-left: 4px;
 }
 
 .checkbox-input:checked + .checkbox-label > .custom-checkbox {
